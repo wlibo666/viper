@@ -6,7 +6,7 @@ package viper
 import (
 	"fmt"
 
-	"github.com/spf13/afero"
+	"github.com/wlibo666/afero"
 )
 
 // Search all configPaths for any config file.

@@ -1,4 +1,4 @@
-// Copyright © 2014 Steve Francia <spf@spf13.com>.
+// Copyright © 2014 Steve Francia <spf@wlibo666.com>.
 //
 // Use of this source code is governed by an MIT-style
 // license that can be found in the LICENSE file.
@@ -24,13 +24,13 @@ import (
 
 	"github.com/fsnotify/fsnotify"
 	"github.com/mitchellh/mapstructure"
-	"github.com/spf13/afero"
-	"github.com/spf13/cast"
-	"github.com/spf13/pflag"
+	"github.com/wlibo666/afero"
+	"github.com/wlibo666/cast"
+	"github.com/wlibo666/pflag"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/spf13/viper/internal/testutil"
+	"github.com/wlibo666/viper/internal/testutil"
 )
 
 // var yamlExample = []byte(`Hacker: true

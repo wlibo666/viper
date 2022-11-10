@@ -1,4 +1,4 @@
-module github.com/spf13/viper
+module github.com/wlibo666/viper
 
 go 1.17
 
@@ -10,12 +10,12 @@ require (
 	github.com/pelletier/go-toml v1.9.5
 	github.com/pelletier/go-toml/v2 v2.0.5
 	github.com/sagikazarmark/crypt v0.8.0
-	github.com/spf13/afero v1.9.2
-	github.com/spf13/cast v1.5.0
-	github.com/spf13/jwalterweatherman v1.1.0
-	github.com/spf13/pflag v1.0.5
 	github.com/stretchr/testify v1.8.1
 	github.com/subosito/gotenv v1.4.1
+	github.com/wlibo666/afero v0.0.0-20221110090344-7d3afe6f6188
+	github.com/wlibo666/cast v0.0.0-20221110092256-159228ec6084
+	github.com/wlibo666/jwalterweatherman v0.0.0-20221110092533-9bfd9bb22866
+	github.com/wlibo666/pflag v0.0.0-20221110091210-75287c0956db
 	gopkg.in/ini.v1 v1.67.0
 	gopkg.in/yaml.v2 v2.4.0
 	gopkg.in/yaml.v3 v3.0.1

@@ -1,6 +1,6 @@
 package viper
 
-import "github.com/spf13/pflag"
+import "github.com/wlibo666/pflag"
 
 // FlagValueSet is an interface that users can implement
 // to bind a set of flags to viper.

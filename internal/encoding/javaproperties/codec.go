@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	"github.com/magiconair/properties"
-	"github.com/spf13/cast"
+	"github.com/wlibo666/cast"
 )
 
 // Codec implements the encoding.Encoder and encoding.Decoder interfaces for Java properties encoding.

@@ -3,7 +3,7 @@ package dotenv
 import (
 	"strings"
 
-	"github.com/spf13/cast"
+	"github.com/wlibo666/cast"
 )
 
 // flattenAndMergeMap recursively flattens the given map into a new map

@@ -8,11 +8,11 @@
 [![Mentioned in Awesome Go](https://awesome.re/mentioned-badge-flat.svg)](https://github.com/avelino/awesome-go#configuration)
 [![run on repl.it](https://repl.it/badge/github/sagikazarmark/Viper-example)](https://repl.it/@sagikazarmark/Viper-example#main.go)
 
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/spf13/viper/CI?style=flat-square)](https://github.com/spf13/viper/actions?query=workflow%3ACI)
-[![Join the chat at https://gitter.im/spf13/viper](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/spf13/viper?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Go Report Card](https://goreportcard.com/badge/github.com/spf13/viper?style=flat-square)](https://goreportcard.com/report/github.com/spf13/viper)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/wlibo666/viper/CI?style=flat-square)](https://github.com/wlibo666/viper/actions?query=workflow%3ACI)
+[![Join the chat at https://gitter.im/wlibo666/viper](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/wlibo666/viper?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Go Report Card](https://goreportcard.com/badge/github.com/wlibo666/viper?style=flat-square)](https://goreportcard.com/report/github.com/wlibo666/viper)
 ![Go Version](https://img.shields.io/badge/go%20version-%3E=1.16-61CFDD.svg?style=flat-square)
-[![PkgGoDev](https://pkg.go.dev/badge/mod/github.com/spf13/viper)](https://pkg.go.dev/mod/github.com/spf13/viper)
+[![PkgGoDev](https://pkg.go.dev/badge/mod/github.com/wlibo666/viper)](https://pkg.go.dev/mod/github.com/wlibo666/viper)
 
 **Go configuration with fangs!**
 
@@ -32,7 +32,7 @@ Many Go projects are built using Viper including:
 ## Install
 
 ```shell
-go get github.com/spf13/viper
+go get github.com/wlibo666/viper
 ```
 
 **Note:** Viper uses [Go Modules](https://github.com/golang/go/wiki/Modules) to manage dependencies.
@@ -298,7 +298,7 @@ id := Get("id") // 13
 ### Working with Flags
 
 Viper has the ability to bind to flags. Specifically, Viper supports `Pflags`
-as used in the [Cobra](https://github.com/spf13/cobra) library.
+as used in the [Cobra](https://github.com/wlibo666/cobra) library.
 
 Like `BindEnv`, the value is not set when the binding method is called, but when
 it is accessed. This means you can bind as early as you want, even in an
@@ -326,7 +326,7 @@ viper.BindPFlags(pflag.CommandLine)
 i := viper.GetInt("flagname") // retrieve values from viper instead of pflag
 ```
 
-The use of [pflag](https://github.com/spf13/pflag/) in Viper does not preclude
+The use of [pflag](https://github.com/wlibo666/pflag/) in Viper does not preclude
 the use of other packages that use the [flag](https://golang.org/pkg/flag/)
 package from the standard library. The pflag package can handle the flags
 defined for the flag package by importing these flags. This is accomplished
@@ -340,7 +340,7 @@ package main
 
 import (
 	"flag"
-	"github.com/spf13/pflag"
+	"github.com/wlibo666/pflag"
 )
 
 func main() {
@@ -406,7 +406,7 @@ viper.BindFlagValues("my-flags", fSet)
 To enable remote support in Viper, do a blank import of the `viper/remote`
 package:
 
-`import _ "github.com/spf13/viper/remote"`
+`import _ "github.com/wlibo666/viper/remote"`
 
 Viper will read a config string (as JSON, TOML, YAML, HCL or envfile) retrieved from a path
 in a Key/Value store such as etcd or Consul.  These values take precedence over
@@ -853,7 +853,7 @@ different vipers.
 ### Why is it called “Viper”?
 
 A: Viper is designed to be a [companion](http://en.wikipedia.org/wiki/Viper_(G.I._Joe))
-to [Cobra](https://github.com/spf13/cobra). While both can operate completely
+to [Cobra](https://github.com/wlibo666/cobra). While both can operate completely
 independently, together they make a powerful pair to handle much of your
 application foundation needs.
 
@@ -868,7 +868,7 @@ Is there a better name for a [commander](http://en.wikipedia.org/wiki/Cobra_Comm
 Viper merges configuration from various sources, many of which are either case insensitive or uses different casing than the rest of the sources (eg. env vars).
 In order to provide the best experience when using multiple sources, the decision has been made to make all keys case insensitive.
 
-There has been several attempts to implement case sensitivity, but unfortunately it's not that trivial. We might take a stab at implementing it in [Viper v2](https://github.com/spf13/viper/issues/772), but despite the initial noise, it does not seem to be requested that much.
+There has been several attempts to implement case sensitivity, but unfortunately it's not that trivial. We might take a stab at implementing it in [Viper v2](https://github.com/wlibo666/viper/issues/772), but despite the initial noise, it does not seem to be requested that much.
 
 You can vote for case sensitivity by filling out this feedback form: https://forms.gle/R6faU74qPRPAzchZ9
 

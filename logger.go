@@ -3,7 +3,7 @@ package viper
 import (
 	"fmt"
 
-	jww "github.com/spf13/jwalterweatherman"
+	jww "github.com/wlibo666/jwalterweatherman"
 )
 
 // Logger is a unified interface for various logging use cases and practices, including:

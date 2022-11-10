@@ -1,4 +1,4 @@
-// Copyright © 2015 Steve Francia <spf@spf13.com>.
+// Copyright © 2015 Steve Francia <spf@wlibo666.com>.
 //
 // Use of this source code is governed by an MIT-style
 // license that can be found in the LICENSE file.
@@ -13,7 +13,7 @@ import (
 
 	crypt "github.com/sagikazarmark/crypt/config"
 
-	"github.com/spf13/viper"
+	"github.com/wlibo666/viper"
 )
 
 type remoteConfigProvider struct{}

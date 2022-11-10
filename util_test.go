@@ -1,4 +1,4 @@
-// Copyright © 2016 Steve Francia <spf@spf13.com>.
+// Copyright © 2016 Steve Francia <spf@wlibo666.com>.
 //
 // Use of this source code is governed by an MIT-style
 // license that can be found in the LICENSE file.
@@ -16,7 +16,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/spf13/viper/internal/testutil"
+	"github.com/wlibo666/viper/internal/testutil"
 )
 
 func TestCopyAndInsensitiviseMap(t *testing.T) {

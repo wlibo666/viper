@@ -8,7 +8,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/spf13/afero"
+	"github.com/wlibo666/afero"
 )
 
 // Search all configPaths for any config file.

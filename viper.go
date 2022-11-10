@@ -1,4 +1,4 @@
-// Copyright © 2014 Steve Francia <spf@spf13.com>.
+// Copyright © 2014 Steve Francia <spf@wlibo666.com>.
 //
 // Use of this source code is governed by an MIT-style
 // license that can be found in the LICENSE file.
@@ -36,18 +36,18 @@ import (
 
 	"github.com/fsnotify/fsnotify"
 	"github.com/mitchellh/mapstructure"
-	"github.com/spf13/afero"
-	"github.com/spf13/cast"
-	"github.com/spf13/pflag"
+	"github.com/wlibo666/afero"
+	"github.com/wlibo666/cast"
+	"github.com/wlibo666/pflag"
 
-	"github.com/spf13/viper/internal/encoding"
-	"github.com/spf13/viper/internal/encoding/dotenv"
-	"github.com/spf13/viper/internal/encoding/hcl"
-	"github.com/spf13/viper/internal/encoding/ini"
-	"github.com/spf13/viper/internal/encoding/javaproperties"
-	"github.com/spf13/viper/internal/encoding/json"
-	"github.com/spf13/viper/internal/encoding/toml"
-	"github.com/spf13/viper/internal/encoding/yaml"
+	"github.com/wlibo666/viper/internal/encoding"
+	"github.com/wlibo666/viper/internal/encoding/dotenv"
+	"github.com/wlibo666/viper/internal/encoding/hcl"
+	"github.com/wlibo666/viper/internal/encoding/ini"
+	"github.com/wlibo666/viper/internal/encoding/javaproperties"
+	"github.com/wlibo666/viper/internal/encoding/json"
+	"github.com/wlibo666/viper/internal/encoding/toml"
+	"github.com/wlibo666/viper/internal/encoding/yaml"
 )
 
 // ConfigMarshalError happens when failing to marshal the configuration.
@@ -1369,7 +1369,7 @@ func readAsCSV(val string) ([]string, error) {
 	return csvReader.Read()
 }
 
-// mostly copied from pflag's implementation of this operation here https://github.com/spf13/pflag/blob/master/string_to_string.go#L79
+// mostly copied from pflag's implementation of this operation here https://github.com/wlibo666/pflag/blob/master/string_to_string.go#L79
 // alterations are: errors are swallowed, map[string]interface{} is returned in order to enable cast.ToStringMap
 func stringToStringConv(val string) interface{} {
 	val = strings.Trim(val, "[]")
@@ -1874,7 +1874,7 @@ func (v *Viper) WatchRemoteConfigOnChannel() error {
 // Retrieve the first found remote configuration.
 func (v *Viper) getKeyValueConfig() error {
 	if RemoteConfig == nil {
-		return RemoteConfigError("Enable the remote features by doing a blank import of the viper/remote package: '_ github.com/spf13/viper/remote'")
+		return RemoteConfigError("Enable the remote features by doing a blank import of the viper/remote package: '_ github.com/wlibo666/viper/remote'")
 	}
 
 	if len(v.remoteProviders) == 0 {

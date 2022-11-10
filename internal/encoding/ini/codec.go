@@ -5,7 +5,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/spf13/cast"
+	"github.com/wlibo666/cast"
 	"gopkg.in/ini.v1"
 )
 

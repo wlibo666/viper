@@ -1,4 +1,4 @@
-// Copyright © 2014 Steve Francia <spf@spf13.com>.
+// Copyright © 2014 Steve Francia <spf@wlibo666.com>.
 //
 // Use of this source code is governed by an MIT-style
 // license that can be found in the LICENSE file.
@@ -18,7 +18,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/spf13/cast"
+	"github.com/wlibo666/cast"
 )
 
 // ConfigParseError denotes failing to parse configuration file.
